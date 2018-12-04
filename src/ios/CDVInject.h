@@ -2,12 +2,9 @@
 #import "CDVInjectWebViewDelegate.h"
 
 @interface Inject: CDVPlugin<UIWebViewDelegate>{
-    #ifdef __CORDOVA_4_0_0
-		CDVUIWebViewDelegate* webViewDelegate;
-	#else
-		CDVWebViewDelegate* webViewDelegate;
-	#endif
-}
+
+        CDVUIWebViewDelegate* webViewDelegate;
+	
 	@property (nonatomic, strong) NSMutableArray* injects;
 	- (void)addInject:(CDVInvokedUrlCommand*)command;
 	- (void)javascriptString:(CDVInvokedUrlCommand*)command;
