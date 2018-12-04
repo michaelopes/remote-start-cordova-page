@@ -1,7 +1,7 @@
 #ifdef __CORDOVA_4_0_0
-    #import <Cordova/CDVUIWebViewDelegate5.h>
+    #import <Cordova/CDVUIWebViewDelegate.h>
 #else
-    #import <Cordova/CDVWebViewDelegate5.h>
+    #import <Cordova/CDVUIWebViewDelegate.h>
 #endif
 
 #ifdef __CORDOVA_4_0_0
@@ -13,7 +13,7 @@
 
 	@end
 #else
-    @interface InjectWebViewDelegate: CDVWebViewDelegate
+    @interface InjectWebViewDelegate: CDVUIWebViewDelegate
 	  @property int webViewLoads;
 	  - (void)webViewDidFinishLoad:(UIWebView*)theWebView;
 	  - (void)injectJavascriptString:(NSString*)resource intoWebView:(UIWebView*)webView;
