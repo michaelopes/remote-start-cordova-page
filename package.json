@@ -1,0 +1,60 @@
+{
+  "_from": "cordova-plugin-fastrde-injectview",
+  "_id": "cordova-plugin-fastrde-injectview@0.2.0",
+  "_inBundle": false,
+  "_integrity": "sha1-3FQYuPIMpYRpO3qni3IPHd3PkKM=",
+  "_location": "/cordova-plugin-fastrde-injectview",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "cordova-plugin-fastrde-injectview",
+    "name": "cordova-plugin-fastrde-injectview",
+    "escapedName": "cordova-plugin-fastrde-injectview",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/cordova-plugin-fastrde-injectview/-/cordova-plugin-fastrde-injectview-0.2.0.tgz",
+  "_shasum": "dc5418b8f20ca584693b7aa78b720f1dddcf90a3",
+  "_spec": "cordova-plugin-fastrde-injectview",
+  "_where": "C:\\Users\\micha\\source\\repos\\RemoteTeste\\RemoteTeste",
+  "author": {
+    "name": "Fabian Strachanski"
+  },
+  "bugs": {
+    "url": "https://github.com/fastrde/cordova-plugin-fastrde-injectview/issues"
+  },
+  "bundleDependencies": false,
+  "cordova": {
+    "id": "cordova-plugin-fastrde-injectview",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "deprecated": false,
+  "description": "Injects cordova and Plugins in the view. Nice when you load Remote Websites",
+  "homepage": "https://github.com/fastrde/cordova-plugin-fastrde-injectview#readme",
+  "keywords": [
+    "cordova",
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-ios",
+    "inject",
+    "remote",
+    "javascript",
+    "server"
+  ],
+  "license": "MIT",
+  "name": "cordova-plugin-fastrde-injectview",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fastrde/cordova-plugin-fastrde-injectview.git"
+  },
+  "version": "0.2.0"
+}
