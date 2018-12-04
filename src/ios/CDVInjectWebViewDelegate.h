@@ -1,23 +1,9 @@
-#ifdef __CORDOVA_4_0_0
-    #import <Cordova/CDVUIWebViewDelegate.h>
-#else
-    #import <Cordova/CDVUIWebViewDelegate.h>
-#endif
+#import <Cordova/CDVUIWebViewDelegate.h>
 
-#ifdef __CORDOVA_4_0_0
-	@interface InjectWebViewDelegate: CDVUIWebViewDelegate
-	  @property int webViewLoads;
-	  - (void)webViewDidFinishLoad:(UIWebView*)theWebView;
-	  - (void)injectJavascriptString:(NSString*)resource intoWebView:(UIWebView*)webView;
-	  - (void)injectJavascriptFile:(NSString*)resource intoWebView:(UIWebView*)webView;
+@interface InjectWebViewDelegate: CDVUIWebViewDelegate
+  @property int webViewLoads;
+  - (void)webViewDidFinishLoad:(UIWebView*)theWebView;
+  - (void)injectJavascriptString:(NSString*)resource intoWebView:(UIWebView*)webView;
+  - (void)injectJavascriptFile:(NSString*)resource intoWebView:(UIWebView*)webView;
+@end
 
-	@end
-#else
-    @interface InjectWebViewDelegate: CDVUIWebViewDelegate
-	  @property int webViewLoads;
-	  - (void)webViewDidFinishLoad:(UIWebView*)theWebView;
-	  - (void)injectJavascriptString:(NSString*)resource intoWebView:(UIWebView*)webView;
-	  - (void)injectJavascriptFile:(NSString*)resource intoWebView:(UIWebView*)webView;
-
-	@end
-#endif
