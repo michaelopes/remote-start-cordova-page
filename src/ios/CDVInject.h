@@ -2,10 +2,16 @@
 #import "CDVInjectWebViewDelegate.h"
 
 @interface Inject: CDVPlugin<UIWebViewDelegate>{
-    CDVWebViewDelegate* webViewDelegate;
+    #ifdef __CORDOVA_4_0_0
+		CDVUIWebViewDelegate* _webViewDelegate;
+	#else
+		CDVWebViewDelegate* _webViewDelegate;
+	#endif
 }
 	@property (nonatomic, strong) NSMutableArray* injects;
 	- (void)addInject:(CDVInvokedUrlCommand*)command;
 	- (void)javascriptString:(CDVInvokedUrlCommand*)command;
 	- (void)javascriptFile:(CDVInvokedUrlCommand*)command;
 @end
+
+still getting <Cordova/CDVViewController
