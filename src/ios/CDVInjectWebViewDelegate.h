@@ -1,7 +1,7 @@
 #ifdef __CORDOVA_4_0_0
-    #import <Cordova/CDVUIWebViewDelegate.h>
+    #import <Cordova/CDVUIWebViewDelegate5.h>
 #else
-    #import <Cordova/CDVWebViewDelegate.h>
+    #import <Cordova/CDVWebViewDelegate5.h>
 #endif
 
 #ifdef __CORDOVA_4_0_0
